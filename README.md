@@ -7,7 +7,8 @@ Guide on Running a Local SQL Server on Your M1 Mac
 2. Download [Microsoft Azure SQL](https://hub.docker.com/_/microsoft-azure-sql-edge)
 3. Open Docker, then open Terminal and run `docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=MyPass@word" -e "MSSQL_PID=Developer" -e "MSSQL_USER=SA" -p 1433:1433 -d --name=sql mcr.microsoft.com/azure-sql-edge`
 4. You should see a container running in Docker like in fig. 1
-5. Connect to the database using your preferred IDE (I used Datagrip) like in fig. 2
+5. In your preferred IDE, set the server/host to `127.0.0.1`, the port to `1433`, and use `SA` for the username and `MyPass@word` for the password
+6. Connect to the database fig. 2
 
 fig. 1
 
